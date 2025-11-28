@@ -96,3 +96,18 @@ Example output:
 image1.jpg: Cloth Mask
 image2.jpg: No Face Mask
 ```
+
+## 📈 Results
+- ver1 → 3‑layer CNN
+
+- ver2 → 2‑layer CNN
+
+- ver3 → 2‑layer CNN without pooling
+
+- simple → lightweight baseline
+
+- resnet18 → pretrained ResNet18 fine‑tuned for 5 classes
+
+- mobilenetv2 → pretrained MobileNetV2 fine‑tuned for 5 classes
+
+- deepcnn → deeper custom CNN
