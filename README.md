@@ -14,7 +14,9 @@ FaceMask/
 │── train.py # Training loop with argparse support 
 │── eval.py # Evaluation, metrics, and plots 
 │── inference.py # Run predictions on new sample images 
-│── utils.py # Helper functions (visualization, reproducibility, checkpoints) 
+│── utils.py # Helper functions (visualization, reproducibility, checkpoints)
+│── docs/
+│   └── report.pdf       
 │── Data/ # Dataset (organized by categories) 
 │── SampleData/ # Demo images for inference 
 │── requirements.txt # Dependencies 
