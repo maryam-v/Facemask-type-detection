@@ -8,7 +8,7 @@ A PyTorch pipeline for training, evaluating, and running inference on face mask 
 
 ```
 
-MaskVision/ 
+FaceMask/ 
 │── datasets.py # Data loading, preprocessing, and dataset classes 
 │── models.py # CNN architectures (NetVer1, NetVer2, NetVer3) 
 │── train.py # Training loop with argparse support 
@@ -28,7 +28,7 @@ MaskVision/
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/MaskVision.git
-   cd MaskVision
+   cd FaceMask
    ```
 
 2. Install dependencies:
