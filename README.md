@@ -1,4 +1,4 @@
-# MaskVision 🩺😷
+# Face Mask Type Detection 🩺😷
 
 A PyTorch pipeline for training, evaluating, and running inference on face mask classification using custom CNN architectures.
 
@@ -17,8 +17,6 @@ MaskVision/
 │── utils.py # Helper functions (visualization, reproducibility, checkpoints) 
 │── Data/ # Dataset (organized by categories) 
 │── SampleData/ # Demo images for inference 
-│── Models/ # Saved model checkpoints 
-│── Figures/ # Saved plots (loss, accuracy, confusion matrix) 
 │── requirements.txt # Dependencies 
 │── README.md # Project overview
 
