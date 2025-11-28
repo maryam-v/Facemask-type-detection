@@ -17,7 +17,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from torch.utils.data import DataLoader
 
 from datasets import load_data, split_data, preprocess_data, MaskDataset
-from models import NetVer1, NetVer2, NetVer3
+from models import NetVer1, NetVer2, NetVer3, SimpleCNN, ResNet18, MobileNetV2, CustomDeepCNN
 
 
 def test(model, test_loader):
@@ -96,6 +96,14 @@ def main(args):
         model = NetVer2()
     elif args.model == "ver3":
         model = NetVer3()
+    elif args.model == "simple":
+        model = SimpleCNN()
+    elif args.model == "resnet18":
+        model = ResNet18(pretrained=True)
+    elif args.model == "mobilenetv2":
+        model = MobileNetV2(pretrained=True)
+    elif args.model == "deepcnn":
+        model = CustomDeepCNN()
     else:
         raise ValueError("Invalid model version. Choose from: ver1, ver2, ver3")
 

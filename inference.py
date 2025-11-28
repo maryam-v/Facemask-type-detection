@@ -11,7 +11,7 @@ from PIL import Image
 import torch
 import torchvision.transforms as transforms
 
-from models import NetVer1, NetVer2, NetVer3
+from models import NetVer1, NetVer2, NetVer3, SimpleCNN, ResNet18, MobileNetV2, CustomDeepCNN
 
 # Categories mapping
 CATEGORIES = {0: 'Cloth Mask',
@@ -64,6 +64,14 @@ def main(args):
         model = NetVer2()
     elif args.model == "ver3":
         model = NetVer3()
+    elif args.model == "simple":
+        model = SimpleCNN()
+    elif args.model == "resnet18":
+        model = ResNet18(pretrained=True)
+    elif args.model == "mobilenetv2":
+        model = MobileNetV2(pretrained=True)
+    elif args.model == "deepcnn":
+        model = CustomDeepCNN()
     else:
         raise ValueError("Invalid model version. Choose from: ver1, ver2, ver3")
 
