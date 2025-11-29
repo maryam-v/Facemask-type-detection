@@ -10,7 +10,7 @@ A PyTorch pipeline for training, evaluating, and running inference on face mask 
 
 FaceMask/ 
 │── datasets.py # Data loading, preprocessing, and dataset classes 
-│── models.py # CNN architectures (NetVer1, NetVer2, NetVer3) 
+│── models.py # CNN architectures 
 │── train.py # Training loop with argparse support 
 │── eval.py # Evaluation, metrics, and plots 
 │── inference.py # Run predictions on new sample images 
